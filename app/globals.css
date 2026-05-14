@@ -1,0 +1,331 @@
+@import "tailwindcss";
+
+/* ROOT VARIABLES */
+:root {
+  --background: #0F1724;
+  --foreground: #ffffff;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0F1724;
+    --foreground: #ededed;
+  }
+}
+
+/* BASE */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* SECTION OFFSET */
+section[id],
+div[id] {
+  scroll-margin-top: 8rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.28s ease-out;
+}
+
+/* SMALL MOBILE */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* ================= WHY POLYVERB AI ================= */
+/* Horizontal phones use portrait-style mobile layout */
+@media (max-height: 520px) and (orientation: landscape) {
+
+  .why-desktop,
+  .why-landscape {
+    display: none !important;
+  }
+
+  .why-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+
+/* ================= WHAT WE DO ================= */
+/* Horizontal phones use mobile accordion layout */
+@media (max-height: 520px) and (orientation: landscape) {
+
+  .wwd-desktop {
+    display: none !important;
+  }
+
+  .wwd-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+
+/* ================= PLATFORM / SOLUTIONS / INDUSTRIES INFOGRAPH ================= */
+
+.mobile-image-box {
+  width: 100%;
+  height: auto;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.mobile-image {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0.75rem;
+}
+
+/* landscape phones */
+@media (max-height: 520px) and (orientation: landscape) {
+
+  .mobile-image-box {
+    height: auto;
+  }
+
+  .mobile-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* ================= HERO GAP FIX - MOBILE LANDSCAPE ================= */
+
+@media (max-height: 520px) and (orientation: landscape) {
+
+  main {
+    padding-top: 3.5rem !important;
+  }
+
+  main section:first-of-type {
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+  }
+}
+
+/* ================= FOOTER MOBILE LANDSCAPE ================= */
+
+@media (max-height: 520px) and (orientation: landscape) {
+
+  .footer-mobile {
+
+    /* TOP */
+    .footer-top {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    .footer-top img {
+      width: 240px !important;
+      margin-left: -12px !important;
+    }
+
+    .footer-tagline {
+      font-size: 11px !important;
+      line-height: 1.5 !important;
+      max-width: 520px !important;
+      margin-top: 0.25rem !important;
+      text-align: center !important;
+      padding-right: 0 !important;
+    }
+
+    /* CONTACT */
+    .footer-contact {
+      text-align: center !important;
+      margin-top: 1rem !important;
+      font-size: 11px !important;
+    }
+
+    .footer-contact div {
+      justify-content: center !important;
+    }
+
+    /* SERVICES */
+    .footer-services {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 1.5rem !important;
+      margin-top: 2rem !important;
+    }
+
+    .footer-services h3 {
+      font-size: 12px !important;
+    }
+
+    .footer-services ul {
+      font-size: 10px !important;
+      line-height: 1.5 !important;
+    }
+
+    /* SOCIAL */
+    .footer-social {
+      margin-top: 2rem !important;
+      justify-content: center !important;
+    }
+  }
+}
+
+/* ================= FOOTER MOBILE LANDSCAPE ================= */
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+
+  .footer-top {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .footer-top img {
+    width: 220px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .footer-tagline {
+    text-align: center !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    margin-top: 0.4rem !important;
+    max-width: 420px !important;
+    padding-right: 0 !important;
+  }
+
+  .footer-contact {
+    text-align: center !important;
+    margin-top: 1rem !important;
+    font-size: 11px !important;
+  }
+
+  .footer-contact > div {
+    justify-content: center !important;
+  }
+
+  .footer-services {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .footer-services h3 {
+    font-size: 12px !important;
+  }
+
+  .footer-services ul {
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+  }
+
+  .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 2rem !important;
+  }
+}
+
+/* ================= MOBILE LANDSCAPE FOOTER BALANCE ================= */
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+
+  .footer-services {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    justify-content: center !important;
+    align-items: start !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .footer-services > div {
+    width: 100%;
+  }
+
+  .footer-top img {
+    width: 320px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* CLIENT LOGO MARQUEE */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= CLIENT LOGO MARQUEE ================= */
+
+.client-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
