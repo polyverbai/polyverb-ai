@@ -21,7 +21,7 @@ export default function Page() {
         id="global-language-coverage"
         label="Languages"
         title="Global Language Coverage"
-        img="/images/languages-v2.png"
+        img="/images/global_language_coverage-v2.png"
       >
         PolyVerb AI supports a wide range of global languages, enabling
         businesses to reach diverse audiences with accuracy, consistency,

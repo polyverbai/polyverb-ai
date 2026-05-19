@@ -21,7 +21,7 @@ export default function Page() {
         id="regional-language-coverage"
         label="Languages"
         title="Regional Language Coverage"
-        img="/images/languages-v2.png"
+        img="/images/regional_language_coverage-v2.png"
       >
         PolyVerb AI provides strong regional language support across high-growth
         and strategic markets. From India to Europe, Asia, and the Middle East,

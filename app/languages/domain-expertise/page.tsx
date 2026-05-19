@@ -21,7 +21,7 @@ export default function Page() {
         id="domain-expertise"
         label="Languages"
         title="Domain Expertise"
-        img="/images/network-v2.png"
+        img="/images/domain_epxertise_v2.png"
       >
         PolyVerb AI combines linguistic excellence with industry knowledge to
         deliver translations and localization tailored to specialized sectors.

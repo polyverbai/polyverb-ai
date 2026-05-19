@@ -464,35 +464,31 @@ useEffect(() => {
           <div className="client-marquee flex whitespace-nowrap items-center">
 
             {[
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
+              "/images/wipro.png",
+              "/images/aptara.png",
+              "/images/jamcracker.png",
+              "/images/syngenta.png",
+              "/images/learningmate.webp",
+             
 
               /* duplicate for seamless loop */
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
-              "/images/client1.png",
+              "/images/wipro.png",
+              "/images/aptara.png",
+              "/images/jamcracker.png",
+              "/images/syngenta.png",
+              "/images/learningmate.webp",
+              
             ].map((src, i) => (
               <img
-                key={i}
-                src={src}
-                alt="client"
-                className="block h-12 md:h-14 mx-14 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300"
-              />
+  key={i}
+  src={src}
+  alt="client"
+  className={`block w-auto object-contain mx-16 grayscale brightness-[3] opacity-90 transition duration-300 ${
+    src.includes("learningmate")
+      ? "h-8 md:h-9"
+      : "h-40 md:h-42"
+  }`}
+/>
             ))}
 
           </div>
