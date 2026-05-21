@@ -151,11 +151,11 @@ export default function Footer() {
 
     {/* TWITTER / X */}
     <a
-      href="https://x.com/PolyVerbAI"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-[#67E8F9]"
-    >
+  href="https://x.com/PolyVerbAI"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-[#67E8F9]"
+>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M22.46 6c-.77.35-1.5.58-2.3.69a4.15 4.15 0 001.8-2.27c-.8.47-1.7.8-2.6.98A4.1 4.1 0 0016.1 4c-2.27 0-4.1 1.84-4.1 4.1 0 .32.03.64.1.94C8.28 8.87 5.1 7.1 2.96 4.4c-.35.6-.55 1.3-.55 2.05 0 1.42.72 2.67 1.82 3.4-.67-.02-1.3-.2-1.85-.5v.05c0 1.98 1.4 3.63 3.25 4-.34.1-.7.15-1.07.15-.26 0-.52-.02-.77-.07.52 1.62 2.04 2.8 3.84 2.83A8.24 8.24 0 012 19.54 11.63 11.63 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68v-.53c.8-.58 1.5-1.3 2.05-2.12z"/>
       </svg>
