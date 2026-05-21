@@ -163,7 +163,7 @@ export default function Footer() {
 
     {/* INSTAGRAM */}
     <a
-      href="https://www.instagram.com"
+      href="https://www.instagram.com/polyverbai"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-[#67E8F9]"
