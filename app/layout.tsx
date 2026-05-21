@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -34,6 +35,24 @@ export default function RootLayout({
 
         {/* FOOTER */}
         <Footer />
+
+        {/* CRISP CHAT */}
+        <Script id="crisp-chat" strategy="afterInteractive">
+          {`
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "4506c411-9282-4b46-86a8-ee0f75c57a5d";
+
+            (function() {
+              var d = document;
+              var s = d.createElement("script");
+
+              s.src = "https://client.crisp.chat/l.js";
+              s.async = 1;
+
+              d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
