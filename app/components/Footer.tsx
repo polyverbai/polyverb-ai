@@ -151,7 +151,7 @@ export default function Footer() {
 
     {/* TWITTER / X */}
     <a
-      href="https://twitter.com"
+      href="https://x.com/PolyVerbAI"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-[#67E8F9]"
