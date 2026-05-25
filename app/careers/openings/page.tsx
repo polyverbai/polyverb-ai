@@ -24,18 +24,18 @@ export default function Page() {
       function: "Project Management",
       description:
         "Lead end-to-end project delivery, client communication, planning, execution tracking, stakeholder coordination, timelines, budgets, and successful enterprise outcomes.",
-      experience: "5+ Years",
-      location: "Pune",
-      workplace: "Onsite",
+      experience: "3+ Years",
+      location: "Bangalore",
+      workplace: "Work From Office",
     },
     {
       title: "Operations Executive",
       function: "Operations",
       description:
         "Manage business operations, workflow execution, reporting, process improvement, vendor coordination, productivity tracking, and operational excellence initiatives.",
-      experience: "3+ Years",
-      location: "Chennai",
-      workplace: "Remote",
+      experience: "2+ Years",
+      location: "Bangalore",
+      workplace: "Work From Office",
     },
     {
       title: "UI / UX Designer",
@@ -43,7 +43,7 @@ export default function Page() {
       description:
         "Design modern user interfaces, wireframes, prototypes, design systems, user journeys, interaction flows, and engaging digital experiences.",
       experience: "2+ Years",
-      location: "Mysore",
+      location: "Bangalore",
       workplace: "Work From Office",
     },
   ];
@@ -127,8 +127,13 @@ export default function Page() {
             <option value="All">All</option>
             <option>Bangalore</option>
             <option>Mysore</option>
-            <option>Pune</option>
             <option>Chennai</option>
+            <option>Hyderabad</option>
+            <option>Kerala</option>
+            <option>Pune</option>
+            <option>Delhi</option>
+            <option>Noida</option>           
+
           </select>
 
           <select

@@ -51,6 +51,12 @@ export default function RootLayout({
 
               d.getElementsByTagName("head")[0].appendChild(s);
             })();
+
+            window.addEventListener("load", function () {
+              if (window.$crisp) {
+                window.$crisp.push(["do", "session:reset"]);
+              }
+            });
           `}
         </Script>
       </body>

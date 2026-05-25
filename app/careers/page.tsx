@@ -97,6 +97,31 @@ export default function Page() {
         </div>
       </section>
 
+{/* LANGUAGE PARTNERS */}
+<section className="px-6 md:px-16 pb-28">
+  <div className="max-w-7xl mx-auto rounded-[32px] border border-white/10 bg-gradient-to-br from-[#0B0F1A] to-[#05070D] p-8 md:p-14 text-center">
+    
+    <p className="text-cyan-400 uppercase tracking-[0.25em] text-sm mb-4">
+      Language Partners
+    </p>
+
+    <h2 className="text-3xl md:text-5xl font-semibold mb-5">
+      Become a Language Partner
+    </h2>
+
+    <p className="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+      Join our global network of translators, localization specialists, interpreters, subtitlers, linguistic experts and VO arts delivering multilingual solutions across global markets.
+    </p>
+
+    <Link
+      href="/language-partners"
+      className="inline-block bg-cyan-400 text-black px-8 py-3 rounded-xl font-medium hover:bg-cyan-300 transition"
+    >
+      Register as a Partner
+    </Link>
+  </div>
+</section>
+
       {/* CTA OUTSIDE BOX */}
       <section className="px-6 md:px-16 pb-28 text-center">
         <p className="text-cyan-400 uppercase tracking-[0.25em] text-sm mb-4">
